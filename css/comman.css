@@ -1,0 +1,45 @@
+:root {
+    --blue: #0B64FE;
+    --black: #000000;
+    --white: #ffffff;
+
+    --background-color: #F3F3F3;
+    --dark-text: #181818;
+    --button: #A6FFFF;
+}
+
+.page-body {
+    font-family: "Ubuntu", sans-serif;
+    margin: 0;
+}
+
+.container {
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+.desktop {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 740px;
+        margin: 0 auto;
+        padding: 0 13px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .container {
+        max-width: 1460px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    
+    .desktop {
+        display: block;
+    }
+}

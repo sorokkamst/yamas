@@ -1,0 +1,154 @@
+.voice-conroller {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: var(--dark-text);
+}
+
+.voice-conroller .voice-conroller__phone {
+    overflow: hidden;
+    margin: 0 -12px;
+}
+
+.voice-conroller__image-bottom {
+    position: relative;
+    right: 8px;
+}
+
+.voice-conroller__title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 34px;
+    line-height: 100%;
+    font-weight: 400;
+    color: var(--white);
+    margin: 0;
+}
+
+.voice-conroller__text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    line-height: 170%;
+    font-weight: 400;
+    color: var(--white);
+}
+
+.voice-conroller__text-bottom {
+    font-size: 38px;
+    line-height: 90%;
+    font-weight: 900;
+    color: var(--white);
+}
+
+.voice-conroller__text-okay {
+    font-size: 61px;
+    line-height: 90%;
+    font-weight: 900;
+    color: var(--white);
+    margin-top: 10px;
+}
+
+.voice-conroller__text-span {
+    font-size: 50px;
+    line-height: 90%;
+    font-weight: 900;
+    color: var(--white);
+}
+
+.voice-conroller__image {
+    overflow: hidden;
+    position: relative;
+    min-height: 770px;
+}
+
+.voice-conroller__image-top,
+.voice-conroller__image-portal,
+.voice-conroller__image-bottom {
+    display: block;
+    margin: 0 auto;
+}
+
+.voice-conroller__image-portal {
+    margin-top: 20px;
+    padding-bottom: 15px;
+    background-color: var(--dark-text);
+}
+
+@media (min-width: 768px) {
+    .voice-conroller__image-bottom {
+        right: 0;
+    }
+
+    .voice-conroller__text-span {
+        font-size: 61px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .voice-conroller {
+        background-image: url("../img/back.svg");
+        background-repeat: repeat;
+        background-position: center;
+    }
+
+    .voice-conroller .container {
+        display: grid;
+        grid-template-columns: 640px 300px 1fr;
+        grid-template-areas: "title girl phone"
+            "say girl phone";
+    }
+
+    .voice-conroller .container {
+        grid-area: title;
+    }
+
+    .voice-conroller__image {
+        grid-area: girl;      
+    }
+
+    .voice-conroller__phone {
+        grid-area: phone;      
+    }
+
+    .voice-conroller .voice-conroller__hello {
+        grid-area: say;
+    }
+
+    .voice-conroller__title {
+        font-size: 56px;
+        line-height: 90%;
+        font-weight: 400;
+    }
+
+    .voice-conroller__text {
+        font-size: 22px;
+        line-height: 170%;
+        font-weight: 400;
+    }
+
+    .voice-conroller__text-top {
+        margin-top: 100px;
+    }
+
+    .voice-conroller__text-bottom {
+        display: block;
+        margin-top: 130px;
+        font-size: 45px;
+    }
+
+    .voice-conroller__text-okay,
+    .voice-conroller__text-span {
+        font-size: 62px;
+    }
+
+    .voice-conroller__text-okay {
+        margin-top: 15px;
+        margin-bottom: 0;
+        padding-left: 40px;
+    }
+
+    .voice-conroller__image-bottom {
+        width: 600px;
+        height: 640px;
+        right: 10px;
+        top: 70px;
+    }
+}
